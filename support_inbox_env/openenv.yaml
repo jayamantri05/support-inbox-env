@@ -1,0 +1,14 @@
+name: support_inbox_env
+description: Customer support simulation
+version: 1.0
+
+entrypoint: env.env:SupportInboxEnv
+
+tasks:
+  - easy
+  - medium
+  - hard
+
+observation_model: env.models:Observation
+action_model: env.models:Action
+reward_model: env.models:Reward
